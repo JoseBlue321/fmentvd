@@ -12,23 +12,20 @@ class AsignaturaSeeder extends Seeder
     {
         Asignatura::create([
             'curso_id'=>1,
-            'nombre'=>'ANATOMIA',
-            'detalle'=>'PRIMER PARCIAL - DR. Choque',
-            'patron'=>'1.jpg',
+            'nombre'=>'Anatomia',
+            'detalle'=>'DR. Choque',
         ]);
 
         Asignatura::create([
             'curso_id'=>1,
             'nombre'=>'Embriologia Y Genetica',
-            'detalle'=>'PRIMER PARCIAL  - DR. PEREZ',
-            'patron'=>'2.jpg',
+            'detalle'=>'DR. PEREZ',
         ]);
 
         Asignatura::create([
             'curso_id'=>1,
             'nombre'=>'Histologia',
-            'detalle'=>'PRIMER PARCIAL TERCER AÑO  - DR. LOZA',
-            'patron'=>'3.jpg',
+            'detalle'=>'DR. LOZA',
         ]);
     }
 }

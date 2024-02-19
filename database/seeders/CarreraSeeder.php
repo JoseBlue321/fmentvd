@@ -17,10 +17,10 @@ class CarreraSeeder extends Seeder
             'carrera'=>'ENFERMERIA',
         ]);
         Carrera::create([
-            'carrera'=>'NUTRICIÓN Y DIETÈTICA',
+            'carrera'=>'NUTRICIÓN Y DIETÉTICA',
         ]);
         Carrera::create([
-            'carrera'=>'TECNOLOGIA MÈDICA',
+            'carrera'=>'TECNOLOGIA MÉDICA',
         ]);
         Carrera::create([
             'carrera'=>'PROGRAMA DE FONOAUDIOLOGIA',

@@ -3,6 +3,7 @@
 use App\Http\Controllers\AsignaturaController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PersonaController;
+use App\Http\Controllers\EvaluacionController;
 use Illuminate\Support\Facades\Route;
 
 //***********************VISTAS PRINCIPALES************************* */
@@ -12,5 +13,10 @@ Route::get('certificados',[HomeController::class,'certificados'])->name('certifi
 Route::get('documentos',[HomeController::class,'documentos'])->name('documentos');
 
 //***********************CALIFICACIONES************************* */
-Route::get('asignatura/{id}',[AsignaturaController::class,'show'])->name('asignatura');
 Route::post('persona',[PersonaController::class,'show'])->name('show.persona');
+
+
+
+
+//Route::get('asignatura/{id}',[AsignaturaController::class,'show'])->name('asignatura');
+//sRoute::get('evaluacion/{id}',[EvaluacionController::class,'show'])->name('evaluacion');

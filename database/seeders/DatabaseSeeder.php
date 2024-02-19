@@ -12,7 +12,9 @@ class DatabaseSeeder extends Seeder
             CarreraSeeder::class,
             CursoSeeder::class,
             AsignaturaSeeder::class,
+            ParcialSeeder::class,
             PersonaSeeder::class,
+            EvaluacionSeeder::class,
         ]);
     }
 }

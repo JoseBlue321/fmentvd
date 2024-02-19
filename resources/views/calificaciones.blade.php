@@ -6,33 +6,25 @@
     @include('partials.nav')
 
     <div class="container">
-        <div class="row align-items-start justify-content-start">
-                @foreach ($carreras as $carrera)
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <h5 class="card-title">{{$carrera->carrera}}</h5>
-                    </div>
-                    <div class="card-body">
-                      @foreach ($carrera->cursos as $curso)
-                        <p class="card-text">
-                            <p><b>{{$curso->anio}}</b></p>
-                            @foreach ($curso->asignaturas as $asignatura)
-                            <div class="list-group bg-danger">
-                                <a href="asignatura/{{$asignatura->id}}" class="list-group-item list-group-item-action">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">{{$asignatura->nombre}}</h5>
-                                  </div>
-                                  <small class="text-body-secondary">{{$asignatura->detalle}}</small>
-                                </a>
-                              </div>
-                            @endforeach
-                        </p>
-                      @endforeach
-                    </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center">Calificaciones</h4>
+                <p class="card-text"></p>
+                <form action="{{route('show.persona')}}" method="post">
+                  @csrf
+                  <div class="form-group">
+                    <label for="">Carnet:</label>
+                    <input type="text" name="carnet" id="" class="form-control" placeholder="" aria-describedby="helpId" required>
+                    <small id="helpId" class="text-muted">Ingrese su número de carnet para verificar</small>
                   </div>
+                  <br>
+                  <button type="submit" class="btn btn-primary" style="width: 380px">Verificar Calificacion</button>
+                </form>
+              </div>
             </div>
-            @endforeach
+          </div>
         </div>
     </div>
 

@@ -5,24 +5,23 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use App\Models\Evaluacion;
 
 class Persona extends Model
 {
     use HasFactory;
     protected $table = 'personas';
     protected $fillable = [
-        'asignatura_id',
         'carnet',
         'nombre',
         'paterno',
         'materno',
-        'nota',
-        'imagen',
     ];
     public $timestamps = false;
     
-    public function post(): BelongsTo
+    public function evaluaciones(): HasMany
     {
-        return $this->belongsTo(Asignatura::class,'asignatura_id');
+        return $this->hasMany(Evaluacion::class,'persona_id');
     }
 }
