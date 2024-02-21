@@ -5,14 +5,9 @@
     @include('partials.cabeza')
     @include('partials.nav')
 
-    <div class="container">
-        <div class="row align-items-start justify-content-start">
-            <div class="col-md-12">
-                Home
-              </div>
-        </div>
-    </div>
+    @include('home.main')
 
+    @include('partials.footer')
     @include('partials.js')
 </body>
 </html>

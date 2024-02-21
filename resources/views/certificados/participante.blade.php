@@ -3,15 +3,19 @@
     @include('partials.head')
 <body>
     @include('partials.cabeza')
-    @include('partials.nav')
-
     <div class="container">
-        <div class="row align-items-start justify-content-start">
+        <div class="row align-items-center justify-content-center">
             <div class="col-md-12">
-                Documentos
-              </div>
+                
+            </div>
         </div>
     </div>
+
+
+
+
+
+
 
 
 

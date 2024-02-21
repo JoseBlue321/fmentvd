@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\MOdels\Persona;
+use App\MOdels\Evaluacion;
 
 class PersonaController extends Controller
 {
@@ -37,6 +38,14 @@ class PersonaController extends Controller
         ]);
         
         
+    }
+
+    public function img(string $id)
+    {
+        $evaluacion = Evaluacion::findOrfail($id);
+        return view('calificaciones.persona',[
+            'evaluacion'=>$evaluacion,
+        ]);
     }
 
     public function edit(string $id)

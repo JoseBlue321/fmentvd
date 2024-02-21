@@ -15,6 +15,8 @@ class DatabaseSeeder extends Seeder
             ParcialSeeder::class,
             PersonaSeeder::class,
             EvaluacionSeeder::class,
+            EventoSeeder::class,
+            ParticipanteSeeder::class,
         ]);
     }
 }
