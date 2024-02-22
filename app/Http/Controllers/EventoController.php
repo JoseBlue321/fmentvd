@@ -12,6 +12,7 @@ class EventoController extends Controller
     {
         return view('certificados.evento');
     }
+
     public function verificacion(Request $request)
     {
         $request->validate([
@@ -21,8 +22,8 @@ class EventoController extends Controller
         $codigo = $request->input('codigo');
         $carnet = $request->input('carnet');
 
-        $participantes = DB::select("select * from 
-        eventos e 
+        $participantes = DB::select("select p.carnet,p.nombre,p.paterno,p.materno,p.correo,p.telefono,p.certificado, e.codigo,e.evento,e.detalle,e.fecha 
+        from eventos e 
         inner join participantes p on e.id = p.evento_id
         where e.codigo = $codigo and p.carnet = '$carnet'");
         
