@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 //***********************VISTAS PRINCIPALES************************* */
 Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('calificaciones',[HomeController::class,'calificaciones'])->name('calificaciones');
-Route::get('certificados',[HomeController::class,'certificados'])->name('certificados');
+Route::get('certificado',[HomeController::class,'certificados'])->name('certificados');
 Route::get('documentos',[HomeController::class,'documentos'])->name('documentos');
 
 //***********************CALIFICACIONES************************* */
@@ -16,6 +16,9 @@ Route::post('persona',[PersonaController::class,'show'])->name('show.persona');
 Route::get('persona/{id}',[PersonaController::class,'img'])->name('img.persona');
 
 //***********************CERTIFICADOS************************* */
-Route::get('evento',[EventoController::class,'index'])->name('index.evento');
-Route::post('participante',[EventoController::class,'verificacion'])->name('verificacion.evento');
-
+Route::get('evento',[EventoController::class,'index'])->name('index.evento'); //login para descargar el certificado
+Route::post('participante',[EventoController::class,'verificacion'])->name('verificacion.evento');  //descarga del certificado
+Route::get('validacion',[EventoController::class,'validacion'])->name('validacion.evento');  //login de validacion
+Route::post('validacioncertificado',[EventoController::class,'VerificacionCertificado'])->name('verificacion.certificado'); //consulta de la validacion
+Route::get('historial',[EventoController::class,'historial'])->name('historial.evento');  //login de historial
+Route::post('verifiacionhistorial',[EventoController::class,'verificacionhistorial'])->name('verificacion.historial'); //consulta del historial

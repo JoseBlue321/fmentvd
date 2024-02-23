@@ -6,7 +6,6 @@
     @include('partials.cabeza')
 
     <div class="container">
-      <a name="" id="" class="btn btn-danger" href="{{ route('home')}}" role="button">Salir</a> <br>
       @foreach ($personas as $persona)
         <div class="row justify-content-center align-items-center">
             <div class="col-md-12">
@@ -47,6 +46,7 @@
             </div>
         </div>
       @endforeach
+      <a name="" id="" class="btn btn-danger" href="{{ route('calificaciones')}}" role="button">Salir</a> <br>
     </div>
 
 
