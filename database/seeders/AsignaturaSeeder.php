@@ -10,22 +10,6 @@ class AsignaturaSeeder extends Seeder
 {
     public function run(): void
     {
-        Asignatura::create([
-            'curso_id'=>1,
-            'nombre'=>'Anatomia',
-            'detalle'=>'DR. Choque',
-        ]);
-
-        Asignatura::create([
-            'curso_id'=>1,
-            'nombre'=>'Embriologia Y Genetica',
-            'detalle'=>'DR. PEREZ',
-        ]);
-
-        Asignatura::create([
-            'curso_id'=>1,
-            'nombre'=>'Histologia',
-            'detalle'=>'DR. LOZA',
-        ]);
+        Asignatura::create(['id'=>1,'curso_id'=>4,'nombre'=>'Inmunologia','detalle'=>'Dra. Jacqueline Cortes']);
     }
 }
