@@ -10,7 +10,6 @@ class ParcialSeeder extends Seeder
 {
     public function run(): void
     {
-        Parcial::create(['id'=>1,'asignatura_id'=>1,'parcial'=>'Primer Parcial','patron'=>'1.pdf','fecha'=>'24/02/2024']);
-
+        Parcial::create(['id'=>1,'asignatura_id'=>1,'parcial'=>'Primer Parcial','patron'=>'1.pdf','fecha'=>'2024-02-24']);
     }
 }

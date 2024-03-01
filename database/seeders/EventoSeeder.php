@@ -14,13 +14,13 @@ class EventoSeeder extends Seeder
             'codigo'=>'100',
             'evento'=>'Curso de Capacitacion Remark',
             'detalle'=>'llevado a cabo en la sala de reuniones de la carrera de medicina',
-            'fecha'=>'02/02/2024',
+            'fecha'=>'2024-02-02',
         ]);
         Evento::create([
             'codigo'=>'101',
             'evento'=>'Taller Medicina Natural',
             'detalle'=>'realizado por el comite de medicina en los predios de la facultad',
-            'fecha'=>'02/02/2024',
+            'fecha'=>'2024-02-02',
         ]);
     }
 }

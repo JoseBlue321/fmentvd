@@ -13,34 +13,52 @@
                   <div class="card-body">
                     <h4 class="card-title">{{$persona->paterno}} {{$persona->materno}} {{$persona->nombre}} - {{$persona->carnet}}</h4>
 
-                    <table class="table table-hover">
-                      <thead class="table-dark">
-                        <tr>
-                          <th>Carrera</th>
-                          <th>Curso</th>
-                          <th>Asignatura</th>
-                          <th>parcial</th>
-                          <th>nota</th>
-                          <th>imagen y patron</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        @foreach ($persona->evaluaciones as $evaluacion)
-                        <tr>
-                          <td>{{$evaluacion->parciales->asignaturas->cursos->carreras->carrera}}</td>
-                          <td>{{$evaluacion->parciales->asignaturas->cursos->anio}}</td>
-                          <td>{{$evaluacion->parciales->asignaturas->nombre}}</td>
-                          <td>{{$evaluacion->parciales->parcial}}</td>
-                          <td>{{$evaluacion->nota}}</td>
-                          <td>
-                            <a name="" id="" class="btn btn-primary" href="{{ route('img.persona',$evaluacion->id)}}" role="button">ver hoja y patron de respuesta</a>
-                          </td>
-                        </tr>
-
-                        @endforeach
-                      </tbody>
-                    </table>          
-
+                    <div class="container">
+                      @foreach ($persona->evaluaciones as $evaluacion)
+                      <div class="row justify-content-center align-items-center g-2">
+                        <div class="col-md-12">
+                          <table class="table table-hover">
+                            <thead class="table-dark">
+                              <tr>
+                                <th>Carrera</th>
+                                <th>Curso</th>
+                                <th>Asignatura</th>
+                                <th>parcial</th>
+                                <th>nota</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>{{$evaluacion->parciales->asignaturas->cursos->carreras->carrera}}</td>
+                                <td>{{$evaluacion->parciales->asignaturas->cursos->anio}}</td>
+                                <td>{{$evaluacion->parciales->asignaturas->nombre}}</td>
+                                <td>{{$evaluacion->parciales->parcial}}</td>
+                                <td>{{$evaluacion->nota}}</td>
+                              </tr>
+                            </tbody>
+                          </table> 
+                        </div>
+                      </div>
+                      <div class="row justify-content-center align-items-center g-2">
+                      <div class="col-md-6">
+                        <embed src="{{ url("notas/$evaluacion->parcial_id/$evaluacion->imagen") }}" type="application/pdf" width="100%" height="400px" />
+                          <div class="d-grid">
+                            <a class="btn btn-outline-primary" type="button" href="{{ asset("notas/$evaluacion->parcial_id/$evaluacion->imagen") }}" download role="button">
+                              Descargar Hoja Respuesta
+                            </a>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <embed src="{{ url("notas/$evaluacion->parcial_id/$evaluacion->parcial_id.pdf") }}" type="application/pdf" width="100%" height="400px" />
+                          <div class="d-grid">
+                            <a class="btn btn-outline-success" type="button" href="{{ asset("notas/$evaluacion->parcial_id/$evaluacion->parcial_id.pdf") }}" download role="button">
+                              Descargar Patron de Respuesta
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                        @endforeach                    
+                    </div>
                   </div>
                 </div>
             </div>
@@ -48,7 +66,6 @@
       @endforeach
       <a name="" id="" class="btn btn-danger" href="{{ route('calificaciones')}}" role="button">Salir</a> <br>
     </div>
-
 
     @include('partials.js')
 </body>
