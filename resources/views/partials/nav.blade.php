@@ -16,7 +16,7 @@
             <a class="nav-link" aria-current="page" href="{{ route('certificados')}}">Certificados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{{ route('documentos')}}">Documentos Digitales</a>
+            <a class="nav-link" aria-current="page" href="{{ route('memorias')}}">Memoria de Investigación</a>
           </li>
         </ul>
       </div>

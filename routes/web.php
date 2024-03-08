@@ -3,13 +3,14 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PersonaController;
 use App\Http\Controllers\EventoController;
+use App\Http\Controllers\MemoriaController;
 use Illuminate\Support\Facades\Route;
 
 //***********************VISTAS PRINCIPALES************************* */
 Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('calificaciones',[HomeController::class,'calificaciones'])->name('calificaciones');
 Route::get('certificado',[HomeController::class,'certificados'])->name('certificados');
-Route::get('documentos',[HomeController::class,'documentos'])->name('documentos');
+Route::get('memorias',[HomeController::class,'memorias'])->name('memorias');
 
 //***********************CALIFICACIONES************************* */
 Route::post('persona',[PersonaController::class,'show'])->name('show.persona');
@@ -22,3 +23,7 @@ Route::get('validacion',[EventoController::class,'validacion'])->name('validacio
 Route::post('validacioncertificado',[EventoController::class,'VerificacionCertificado'])->name('verificacion.certificado'); //consulta de la validacion
 Route::get('historial',[EventoController::class,'historial'])->name('historial.evento');  //login de historial
 Route::post('verifiacionhistorial',[EventoController::class,'verificacionhistorial'])->name('verificacion.historial'); //consulta del historial
+
+//***********************MEMORIAS DE INVESTIGACION************************* */
+Route::get('memorias/proyectos',[MemoriaController::class,'proyectos'])->name('proyectos.memorias');
+Route::get('memorias/articulos',[MemoriaController::class,'articulos'])->name('articulos.memorias');

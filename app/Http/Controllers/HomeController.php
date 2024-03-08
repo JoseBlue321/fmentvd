@@ -22,7 +22,7 @@ class HomeController extends Controller
         return view('certificados');
     }
 
-    public function documentos(){
-        return view('documentos');
+    public function memorias(){
+        return view('memorias');
     }
 }
