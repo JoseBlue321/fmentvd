@@ -10,7 +10,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title text-center">Artículos científicos, otro tipo de publicación</h4>
+                        <h4 class="card-title text-center">Libros</h4>
                         <p class="card-text"></p>
                         <div class="container">
                             <form action="" method="post">
@@ -29,19 +29,19 @@
                               </div>
 
                               <div class="card border-success mb-3" >
-                                <div class="card-header"><b>Información del articulo cientifico</b></div>
+                                <div class="card-header"><b>Información del Libro</b></div>
                                 <div class="card-body">
                                 <div class="row align-items-start justify-content-start">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                          <label for="">Titulo del Articulo</label>
+                                          <label for="">Titulo del Libro</label>
                                           <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
                                           <small id="helpId" class="text-muted"></small>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                          <label for="">Nombre de la Revista</label>
+                                          <label for="">Editorial</label>
                                           <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
                                           <small id="helpId" class="text-muted"></small>
                                         </div>
@@ -52,25 +52,25 @@
                                     <div class="col-md-4">
                                         <br>
                                         <div class="form-group">
-                                          <label for="">DOI</label>
-                                          <input type="number" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                          <small id="helpId" class="text-muted">Ingrese el codigo DOI</small>
+                                          <label for="">Fecha de publicación</label>
+                                          <input type="date" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                          <small id="helpId" class="text-muted"></small>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <br>
                                         <div class="form-group">
-                                          <label for="">Enlace del articulo</label>
-                                          <input type="text" name="" id="" class="form-control" placeholder="http://..." aria-describedby="helpId">
-                                          <small id="helpId" class="text-muted">Ingrese el enlace donde fue publicado</small>
+                                          <label for="">Enlace del libro</label>
+                                          <input type="text" name="" id="" class="form-control" placeholder="url..." aria-describedby="helpId">
+                                          <small id="helpId" class="text-muted">Si esta disponible</small>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <br>
                                         <div class="form-group">
-                                          <label for="">Citas recibidas</label>
+                                          <label for="">ISBN</label>
                                           <input type="number" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                          <small id="helpId" class="text-muted">Ingrese el numero de citas recibidas</small>
+                                          <small id="helpId" class="text-muted"></small>
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@
                                     <div class="col-md-12">
                                         <br>
                                         <div class="mb-3">
-                                            <label for="formFile" class="form-label">Archivo del articulo en formato .pdf</label>
+                                            <label for="formFile" class="form-label">Archivo del libro en formato .pdf</label>
                                             <input class="form-control" type="file" id="formFile">
                                         </div>
                                     </div>

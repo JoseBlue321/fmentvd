@@ -36,19 +36,19 @@
                                 <tr>
                                     <td>Libros</td>
                                     <td>
-                                        <a name="" id="" class="btn btn-primary" href="#" role="button">Registrar</a>
+                                        <a name="" id="" class="btn btn-primary" href="{{ route('libros.memorias') }}" role="button">Registrar</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Tesis realizadas en el Instituto por cursantes/por miembros del Instituto</td>
                                     <td>
-                                        <a name="" id="" class="btn btn-primary" href="#" role="button">Registrar</a>
+                                        <a name="" id="" class="btn btn-primary" href="{{ route('tesis.memorias') }}" role="button">Registrar</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Aportes de Congresos, Simposios o conferencias</td>
                                     <td>
-                                        <a name="" id="" class="btn btn-primary" href="#" role="button">Registrar</a>
+                                        <a name="" id="" class="btn btn-primary" href="{{ route('aportes.memorias') }}" role="button">Registrar</a>
                                     </td>
                                 </tr>
                             </tbody>

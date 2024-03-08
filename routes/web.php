@@ -27,3 +27,6 @@ Route::post('verifiacionhistorial',[EventoController::class,'verificacionhistori
 //***********************MEMORIAS DE INVESTIGACION************************* */
 Route::get('memorias/proyectos',[MemoriaController::class,'proyectos'])->name('proyectos.memorias');
 Route::get('memorias/articulos',[MemoriaController::class,'articulos'])->name('articulos.memorias');
+Route::get('memorias/libros',[MemoriaController::class,'libros'])->name('libros.memorias');
+Route::get('memorias/tesis',[MemoriaController::class,'tesis'])->name('tesis.memorias');
+Route::get('memorias/aportes',[MemoriaController::class,'aportes'])->name('aportes.memorias');
