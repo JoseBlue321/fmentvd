@@ -214,23 +214,6 @@
                                 </div>
                               </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 <div class="row align-items-start justify-content-start">
                                   <div class="col-md-12">
                                     <br>

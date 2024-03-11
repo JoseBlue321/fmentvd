@@ -15,6 +15,8 @@ Route::get('memorias',[HomeController::class,'memorias'])->name('memorias');
 //***********************CALIFICACIONES************************* */
 Route::post('persona',[PersonaController::class,'show'])->name('show.persona');
 Route::get('persona/{id}',[PersonaController::class,'img'])->name('img.persona');
+Route::get('solicitudes',[PersonaController::class,'solicitudes'])->name('solicitudes.persona');
+Route::post('plantilla',[PersonaController::class,'plantilla'])->name('plantillas.persona');
 
 //***********************CERTIFICADOS************************* */
 Route::get('evento',[EventoController::class,'index'])->name('index.evento'); //login para descargar el certificado
