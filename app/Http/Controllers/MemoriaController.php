@@ -21,4 +21,10 @@ class MemoriaController extends Controller
     public function aportes(){
         return view('memorias.aportes');
     }
+    public function organizadores(){
+        return view('memorias.organizadores');
+    }
+    public function patentes(){
+        return view('memorias.patentes');
+    }
 }

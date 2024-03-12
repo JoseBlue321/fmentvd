@@ -10,7 +10,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title text-center">Aportes de Congresos, Simposios o conferencias</h4>
+                        <h4 class="card-title text-center">Aportes (de participantes) en Congresos Científicos, Simposios, Conferencias, Jornadas, Eventos de Investigación por los Institutos</h4>
                         <p class="card-text"></p>
                         <div class="container">
                             <form action="" method="post">
@@ -72,19 +72,26 @@
                                 <div class="row align-items-start justify-content-start">
                                     <div class="col-md-6">
                                         <br>
-                                        <div class="form-group">
-                                            <label for="">Organizadores del evento</label>
-                                            <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                            <small id="helpId" class="text-muted"></small>
-                                          </div>
+                                            <label for="exampleDataList" class="form-label">Tipo de evento</label>
+                                            <input class="form-control" list="metodologias" id="exampleDataList" placeholder="">
+                                            <datalist id="metodologias">
+                                              <option value="Congresos">
+                                              <option value="Simposios">
+                                              <option value="Conferencias">
+                                              <option value="Jornadas">
+                                              <option value="Otros eventos cientificos">
+                                            </datalist>
                                     </div>
                                     <div class="col-md-6">
                                         <br>
-                                        <div class="form-group">
-                                          <label for="">Tipo de contribución</label>
-                                          <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                          <small id="helpId" class="text-muted"></small>
-                                        </div>
+                                            <label for="exampleDataList" class="form-label">Tipo de participación</label>
+                                            <input class="form-control" list="participacion" id="exampleDataList" placeholder="">
+                                            <datalist id="participacion">
+                                              <option value="Asistente">
+                                              <option value="Ponente">
+                                              <option value="Presentación de poster cientifico">
+                                              <option value="Contribucion de mesa de trabajo">
+                                            </datalist>
                                     </div>
                                 </div>
 
@@ -110,7 +117,7 @@
                                     <div class="col-md-12">
                                         <br>
                                         <div class="mb-3">
-                                            <label for="formFile" class="form-label">Archivo del evento en formato .pdf</label>
+                                            <label for="formFile" class="form-label">Archivo del aporte en formato .pdf</label>
                                             <input class="form-control" type="file" id="formFile">
                                         </div>
                                     </div>

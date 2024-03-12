@@ -54,7 +54,7 @@
                                         <div class="form-group">
                                           <label for="">DOI</label>
                                           <input type="number" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                          <small id="helpId" class="text-muted">Ingrese el codigo DOI</small>
+                                          <small id="helpId" class="text-muted">Si corresponde (No obligatorio)</small>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -62,7 +62,7 @@
                                         <div class="form-group">
                                           <label for="">Enlace del articulo</label>
                                           <input type="text" name="" id="" class="form-control" placeholder="http://..." aria-describedby="helpId">
-                                          <small id="helpId" class="text-muted">Ingrese el enlace donde fue publicado</small>
+                                          <small id="helpId" class="text-muted">Si corresponde (No obligatorio)</small>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -76,11 +76,23 @@
                                 </div>
 
                                 <div class="row align-items-start justify-content-start">
+                                  <div class="col-md-12">
+                                      <br>
+                                      <div class="form-group">
+                                        <label for="">Como citar el articulo (Vancuber)</label>
+                                        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                        <small id="helpId" class="text-muted"></small>
+                                      </div>
+                                  </div>
+                              </div>
+
+                                <div class="row align-items-start justify-content-start">
                                     <div class="col-md-12">
                                         <br>
                                         <div class="mb-3">
                                             <label for="formFile" class="form-label">Archivo del articulo en formato .pdf</label>
                                             <input class="form-control" type="file" id="formFile">
+                                            <small id="helpId" class="text-muted">Si lo tiene (No obligatorio)</small>
                                         </div>
                                     </div>
                                 </div>

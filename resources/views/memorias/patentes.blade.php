@@ -10,7 +10,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title text-center">Libros</h4>
+                        <h4 class="card-title text-center">Patentes</h4>
                         <p class="card-text"></p>
                         <div class="container">
                             <form action="" method="post">
@@ -20,7 +20,7 @@
                                     <div class="row align-items-start justify-content-start">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                              <label for="">Autor(es)</label>
+                                              <label for="">Nombre de los inventores de la patente</label>
                                               <textarea class="form-control" name="" id="" rows="3" placeholder=""></textarea>
                                             </div>
                                         </div>
@@ -29,73 +29,92 @@
                               </div>
 
                               <div class="card border-success mb-3" >
-                                <div class="card-header"><b>Información del Libro</b></div>
+                                <div class="card-header"><b>Información del patente</b></div>
                                 <div class="card-body">
                                 <div class="row align-items-start justify-content-start">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                          <label for="">Titulo del Libro</label>
+                                          <label for="">Titulo del patente</label>
                                           <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
                                           <small id="helpId" class="text-muted"></small>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                          <label for="">Editorial</label>
-                                          <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                          <small id="helpId" class="text-muted"></small>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-start justify-content-start">
-                                    <div class="col-md-3">
-                                        <br>
-                                        <div class="form-group">
-                                          <label for="">Fecha de publicación</label>
-                                          <input type="date" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                          <small id="helpId" class="text-muted"></small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <br>
-                                        <div class="form-group">
-                                          <label for="">Enlace del libro</label>
-                                          <input type="text" name="" id="" class="form-control" placeholder="url..." aria-describedby="helpId">
-                                          <small id="helpId" class="text-muted">Si esta disponible</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <br>
-                                        <div class="form-group">
-                                          <label for="">ISBN</label>
+                                          <label for="">Número de la Patente</label>
                                           <input type="number" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
                                           <small id="helpId" class="text-muted"></small>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                      <br>
-                                      <div class="form-group">
-                                        <label for="">Depósito Legal</label>
-                                        <input type="number" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                        <small id="helpId" class="text-muted"></small>
-                                      </div>
-                                  </div>
+                                </div>
+                                <div class="row align-items-start justify-content-start">
+                                    <div class="col-md-6">
+                                        <br>
+                                        <div class="form-group">
+                                          <label for="">Fecha de solicitud</label>
+                                          <input type="date" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                        </div>  
+                                    </div>
+                                    <div class="col-md-6">
+                                        <br>
+                                        <div class="form-group">
+                                          <label for="">Fecha de concesion</label>
+                                          <input type="date" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                        </div> 
+                                    </div>
                                 </div>
 
                                 <div class="row align-items-start justify-content-start">
                                     <div class="col-md-12">
                                         <br>
-                                        <div class="mb-3">
-                                            <label for="formFile" class="form-label">Archivo del libro en formato .pdf</label>
-                                            <input class="form-control" type="file" id="formFile">
+                                        <div class="form-group">
+                                          <label for="">Titular de la patente</label>
+                                          <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                          <small id="helpId" class="text-muted"></small>
                                         </div>
                                     </div>
                                 </div>
 
+                                <div class="row align-items-start justify-content-start">
+                                    <div class="col-md-12">
+                                        <br>
+                                        <div class="form-group">
+                                          <label for="">Resumen breve</label>
+                                          <textarea class="form-control" name="" id="" rows="3" placeholder="Describir la invención y sus caracteristicas más importantes"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
 
+                                <div class="row align-items-start justify-content-start">
+                                    <div class="col-md-12">
+                                        <br>
+                                        <div class="form-group">
+                                          <label for="">Reinvindicaciones</label>
+                                          <textarea class="form-control" name="" id="" rows="3" placeholder="limites precisos de la protección otorgada por la patente"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-start justify-content-start">
+                                    <div class="col-md-6">
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="">Clasificación Internacional</label>
+                                            <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                            <small id="helpId" class="text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="">Lugar donde se otorgó la patente</label>
+                                            <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                            <small id="helpId" class="text-muted"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                   
                                 <div class="row align-items-start justify-content-start">
                                   <div class="col-md-12">
                                     <br>

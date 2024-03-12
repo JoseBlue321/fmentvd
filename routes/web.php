@@ -32,3 +32,5 @@ Route::get('memorias/articulos',[MemoriaController::class,'articulos'])->name('a
 Route::get('memorias/libros',[MemoriaController::class,'libros'])->name('libros.memorias');
 Route::get('memorias/tesis',[MemoriaController::class,'tesis'])->name('tesis.memorias');
 Route::get('memorias/aportes',[MemoriaController::class,'aportes'])->name('aportes.memorias');
+Route::get('memorias/organizadores',[MemoriaController::class,'organizadores'])->name('organizadores.memorias');
+Route::get('memorias/patentes',[MemoriaController::class,'patentes'])->name('patentes.memorias');

@@ -53,12 +53,12 @@
                                         <div class="form-group">
                                           <label for="">Resolución HCF </label>
                                           <input type="number" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                          <small id="helpId" class="text-muted">Ingrese el numero de Resolucion</small>
+                                          <small id="helpId" class="text-muted">Si corresponde (No obligatorio)</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row align-items-start justify-content-start">
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="form-group">
                                           <label for="">Carrera</label>
                                           <select class="form-control" name="" id="">
@@ -66,10 +66,12 @@
                                             <option>Enfermeria</option>
                                             <option>Nutrición y Dietética</option>
                                             <option>Tecnología Médica</option>
+                                            <option>Programa de Fonoaudiología</option>
+                                            <option>Programa de Terapia Ocupacional</option>
                                           </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="form-group">
                                           <label for="">Departamento</label>
                                           <select class="form-control" name="" id="">
@@ -84,6 +86,16 @@
                                           </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-4">
+                                      <div class="form-group">
+                                        <label for="">Instituto</label>
+                                        <select class="form-control" name="" id="">
+                                          <option>Genética</option>
+                                          <option>IINSAD</option>
+                                          <option>IBBA</option>
+                                        </select>
+                                      </div>
+                                  </div>
                                 </div>
                                 </div>
                               </div>
@@ -93,7 +105,6 @@
                                 <div class="card-body">
                                   <div class="row align-items-start justify-content-start">
                                     <div class="col-md-12">
-                                        <br>
                                         <div class="form-group">
                                           <label for="">Titulo del Proyecto</label>
                                           <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
@@ -111,7 +122,7 @@
                                     </div>
                                 </div>
                                 <div class="row align-items-start justify-content-start">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <br>
                                         <div class="form-group">
                                           <label for="">Tipo de proyecto </label>
@@ -119,25 +130,19 @@
                                             <option>interacción social</option>
                                             <option>investigación</option>
                                             <option>extensión universitaria</option>
-                                            <option>Tecnología Médica</option>
                                           </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <br>
-                                        <p>Tipo de investigación </p>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="uno" id="" value="checkedValue"> Observacional
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="uno" id="" value="checkedValue"> Experimental
-                                            </label>
-                                        </div>
-                                    </div>
                                 </div>
+                                <div class="row align-items-start justify-content-start">
+                                  <div class="col-md-12">
+                                    <br>
+                                    <div class="form-group">
+                                      <label for="">Investigadores Principales y Colaboradores</label>
+                                      <textarea class="form-control" name="" id="" rows="3"></textarea>
+                                    </div>
+                                  </div>
+                              </div>
 
                                 <div class="row align-items-start justify-content-start">
                                     <div class="col-md-6">
@@ -177,7 +182,7 @@
                                         <div class="form-group">
                                           <label for="">Colaboraciones y Alianzas</label>
                                           <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                          <small id="helpId" class="text-muted"></small>
+                                          <small id="helpId" class="text-muted">Si corresponde (No obligatorio)</small>
                                         </div>
                                     </div>
                                 </div>
@@ -203,9 +208,9 @@
                                         <div class="form-group">
                                             <label for="">Estado del Proyecto</label>
                                             <select class="form-control" name="" id="">
-                                              <option>Concluido</option>
+                                              <option>En proceso de aprobación</option>
                                               <option>En ejecucion</option>
-                                              <option>En aprobación</option>
+                                              <option>Concluido</option>
                                             </select>
                                           </div>
                                     </div>

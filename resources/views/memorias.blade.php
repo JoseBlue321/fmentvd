@@ -40,15 +40,27 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Tesis realizadas en el Instituto por cursantes/por miembros del Instituto</td>
+                                    <td>Tesis realizadas en el Instituto por cursantes/por miembros del Instituto/Tuteladas en el Instituto</td>
                                     <td>
                                         <a name="" id="" class="btn btn-primary" href="{{ route('tesis.memorias') }}" role="button">Registrar</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Aportes de Congresos, Simposios o conferencias</td>
+                                    <td>Aportes (de participantes) en Congresos Científicos, Simposios, Conferencias, Jornadas, Eventos de Investigación por los Institutos</td>
                                     <td>
                                         <a name="" id="" class="btn btn-primary" href="{{ route('aportes.memorias') }}" role="button">Registrar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Organizadores de Simposios, Conferencias, Jornadas, Eventos de Investigación por los Institutos</td>
+                                    <td>
+                                        <a name="" id="" class="btn btn-primary" href="{{ route('organizadores.memorias') }}" role="button">Registrar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Patentes</td>
+                                    <td>
+                                        <a name="" id="" class="btn btn-primary" href="{{ route('patentes.memorias') }}" role="button">Registrar</a>
                                     </td>
                                 </tr>
                             </tbody>
