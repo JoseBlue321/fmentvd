@@ -21,7 +21,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                           <label for="">Nombre</label>
-                                          <input type="text" name="nombre" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                          <input type="text" name="nombre" id="" class="form-control" placeholder="" aria-describedby="helpId" required>
                                           <small id="helpId" class="text-muted">Ingrese su nombre completo Ej. Dr. juan lopez lopez</small>
                                         </div>
                                     </div>
@@ -30,13 +30,13 @@
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label for="">Celular</label>
-                                        <input type="number" name="celular" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                        <input type="number" name="celular" id="" class="form-control" placeholder="" aria-describedby="helpId" required>
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label for="">Correo</label>
-                                        <input type="email" name="correo" id="" class="form-control" placeholder="correo@gmail.com" aria-describedby="">
+                                        <input type="email" name="correo" id="" class="form-control" placeholder="correo@gmail.com" aria-describedby="" required>
                                         <small id="helpId" class="text-muted">Ingrese su correo electrónico</small>
                                       </div>
                                     </div>
@@ -53,7 +53,7 @@
                                     <div class="col-md-12">
                                       <div class="form-group">
                                         <label for="">Asignatura</label>
-                                        <input type="text" name="asignatura" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                        <input type="text" name="asignatura" id="" class="form-control" placeholder="" aria-describedby="helpId" required>
                                         <small id="helpId" class="text-muted">Ingrese el nombre de la asignatura</small>
                                       </div>
                                     </div>
@@ -63,7 +63,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group">
                                           <label for="">Carrera</label>
-                                          <select class="form-control" name="carrera" id="">
+                                          <select class="form-control" name="carrera" id="" required>
                                             <option>Medicina</option>
                                             <option>Enfermeria</option>
                                             <option>Nutrición y Dietética</option>
@@ -73,22 +73,25 @@
                                           </select>
                                         </div>
                                     </div>
+
+
                                     <div class="col-md-3">
-                                        <div class="form-group">
-                                          <label for="">Departamento</label>
-                                          <select class="form-control" name="departamento" id="">
-                                            <option>Medicina y Salud Mental</option>
-                                            <option>Ciencias Funcionales</option>
-                                            <option>Ciencias Morfológicas</option>
-                                            <option>Cirugia</option>
-                                            <option>Salud Pública</option>
-                                            <option>Patología</option>
-                                            <option>Materno Infantil</option>
-                                            <option>Ninguno</option>
-                                          </select>
-                                          <small id="helpId" class="text-muted">Si corresponde.</small>
-                                        </div>
-                                    </div>
+                                      <div class="form-group">
+                                       <label for="exampleDataList" class="form-label">Departamento</label>
+                                       <input class="form-control" name="departamento" list="dep" id="exampleDataList" placeholder="Type to search...">
+                                       <datalist id="dep">
+                                        <option>Medicina y Salud Mental</option>
+                                        <option>Ciencias Funcionales</option>
+                                        <option>Ciencias Morfológicas</option>
+                                        <option>Cirugia</option>
+                                        <option>Salud Pública</option>
+                                        <option>Patología</option>
+                                        <option>Materno Infantil</option>
+                                       </datalist>
+                                       <small id="helpId" class="text-muted">Si corresponde.</small>
+                                     </div>
+                                   </div>
+
                                     <div class="col-md-3">
                                       <div class="form-group">
                                         <label for="exampleDataList" class="form-label">Cátedra</label>
@@ -128,7 +131,7 @@
                                     <div class="col-md-3">
                                       <div class="form-group">
                                         <label for="">Año</label>
-                                        <select class="form-control" name="anio" id="">
+                                        <select class="form-control" name="anio" id="" required>
                                           <option>Primer año</option>
                                           <option>Segundo año</option>
                                           <option>Tercer año</option>
@@ -146,12 +149,20 @@
                                       <br>
                                       <div class="form-group">
                                        <label for="exampleDataList" class="form-label">Tipo exámen</label>
-                                       <input class="form-control" name="tipo" list="examen" id="exampleDataList" placeholder="Type to search...">
+                                       <input class="form-control" name="tipo" list="examen" id="exampleDataList" placeholder="Type to search..." required>
                                        <datalist id="examen">
-                                         <option value="Parcial">
-                                         <option value="Final 1T">
-                                         <option value="FInal 2T">
-                                         <option value="Práctica">
+                                        <option value="Primer Parcial">
+                                        <option value="Segundo Parcial">
+                                        <option value="Tercer Parcial">
+                                        <option value="Cuarto Parcial">
+                                        <option value="Quinto Parcial">
+                                        <option value="Sexto Parcial">
+                                        <option value="Final">
+                                        <option value="Final Teórico">
+                                        <option value="Final Práctico">
+                                        <option value="Primer Turno">
+                                        <option value="Segundo Turno">
+                                        <option value="Práctica">
                                        </datalist>
                                        <small id="helpId" class="text-muted"></small>
                                      </div>
@@ -160,14 +171,14 @@
                                     <br>
                                     <div class="form-group">
                                       <label for="">Fecha del examen</label>
-                                      <input type="date" name="fecha_examen" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                      <input type="date" name="fecha_examen" id="" class="form-control" placeholder="" aria-describedby="helpId" required>
                                     </div>  
                                   </div>
                                   <div class="col-md-4">
                                     <br>
                                     <div class="form-group">
                                       <label for="">Número de preguntas</label>
-                                      <select class="form-control" name="numero_preguntas" id="">
+                                      <select class="form-control" name="numero_preguntas" id="" required>
                                         <option>30</option>
                                         <option>35</option>
                                         <option>50</option>

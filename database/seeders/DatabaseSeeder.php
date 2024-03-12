@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             EvaluacionSeeder::class,
             EventoSeeder::class,
             ParticipanteSeeder::class,
+            SolicitudSeeder::class,
         ]);
     }
 }

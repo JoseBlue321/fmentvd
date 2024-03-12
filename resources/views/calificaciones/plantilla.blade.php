@@ -15,7 +15,7 @@ body {
       /* Estilos CSS */
       .texto-posicionado {
     position: absolute; /* Establece el posicionamiento absoluto */
-    top: 19%; /* Posiciona el texto en el 50% del eje vertical */
+    top: 12.5%; /* Posiciona el texto en el 50% del eje vertical */
     left: 55%; /* Posiciona el texto en el 50% del eje horizontal */
    
     /* Otros estilos opcionales */
@@ -27,16 +27,16 @@ body {
 </head>
 <body>
 
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
      <!-- Contenido de tu página aquí -->
   <div class="texto-posicionado">
     <b>Asignatura:</b>  {{$solicitud->asignatura}}. <br>
-    <b>Carrera:</b>  {{$solicitud->carrera}} <b>Dep.</b> {{$solicitud->departamento}} <b>Cat.</b> {{$solicitud->catedra}}
+    <b>Carrera:</b>  {{$solicitud->carrera}} <br>
+    <b>Departamento:</b> {{$solicitud->departamento}} <br>
+    <b>Cátedra:</b> {{$solicitud->catedra}} <br>
+    <b>Año:</b> {{$solicitud->anio}} <br>
+    <b>Examen:</b> {{$solicitud->tipo}} <br>
+    <b>Fecha:</b> {{date("d M Y", strtotime($solicitud->fecha_examen))}}<br>
   </div>
-    <p>
-        
-    </p>
-    
+
 </body>
 </html>

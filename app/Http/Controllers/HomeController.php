@@ -12,9 +12,9 @@ class HomeController extends Controller
     }
 
     public function calificaciones(){
-        $carreras = Carrera::all();
+        //$carreras = Carrera::all();
         return view('calificaciones',[
-            'carreras'=>$carreras,
+            //'carreras'=>$carreras,
         ]);
     }
 
