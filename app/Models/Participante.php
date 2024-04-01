@@ -13,6 +13,8 @@ class Participante extends Model
         'evento_id',
         'certificado',
         'carnet',
+        'tipo',
+        'grado',
         'nombre',
         'paterno',
         'materno',
