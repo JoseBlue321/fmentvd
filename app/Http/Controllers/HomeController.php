@@ -20,9 +20,9 @@ class HomeController extends Controller
     }
 
     public function certificados(){
-        $evento = Evento::findOrFail(2); //ejemplo "2" es el id del evento
+        $eventos = Evento::all();
         return view('certificados',[
-            'evento'=>$evento,
+            'eventos'=>$eventos,
         ]);
     }
 

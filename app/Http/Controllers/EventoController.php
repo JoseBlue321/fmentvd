@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Evento;
 
 class EventoController extends Controller
 {
@@ -11,6 +12,13 @@ class EventoController extends Controller
     public function index()
     {
         return view('certificados.evento');
+    }
+    
+    public function show(string $id){
+        $evento = Evento::findOrFail($id);
+        return view('certificados.registro',[
+            'evento'=>$evento,
+        ]);
     }
 
     public function verificacion(Request $request)

@@ -20,6 +20,7 @@ Route::get('solicitudes',[PersonaController::class,'solicitudes'])->name('solici
 Route::post('plantilla',[PersonaController::class,'plantilla'])->name('plantillas.persona');
 
 //***********************CERTIFICADOS************************* */
+Route::get('evento/{id}',[EventoController::class,'show'])->name('show.evento'); //formulario de registro para ver los eventos
 Route::post('formulario',[ParticipanteController::class,'store'])->name('store.participante'); //registro del formulario de participacion
 Route::get('evento',[EventoController::class,'index'])->name('index.evento'); //login para descargar el certificado
 Route::post('participante',[EventoController::class,'verificacion'])->name('verificacion.evento');  //descarga del certificado
