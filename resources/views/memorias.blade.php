@@ -6,70 +6,84 @@
     @include('partials.nav')
 
     <div class="container">
-        <div class="row align-items-start justify-content-start">
-            <div class="col-md-8">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="holder.js/100x180/" alt="">
+                    <h5 class="card-header text-center">RECOPILACIÓN DE DATOS</h5>
                     <div class="card-body">
-                        <h4 class="card-title text-center">RECOPILACIÓN DE DATOS</h4>
-                        <p class="card-text"></p>
-                        <table class="table">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th>Categoria</th>
-                                    <th>Registro</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Proyectos de: Investigación/Interacción Social/Extensión Universitaria</td>
-                                    <td>
-                                        <a name="" id="" class="btn btn-primary" href="{{ route('proyectos.memorias') }}" role="button">Registrar</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Artículos científicos, otro tipo de publicación</td>
-                                    <td>
-                                        <a name="" id="" class="btn btn-primary" href="{{ route('articulos.memorias') }}" role="button">Registrar</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Libros</td>
-                                    <td>
-                                        <a name="" id="" class="btn btn-primary" href="{{ route('libros.memorias') }}" role="button">Registrar</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Tesis realizadas en el Instituto por cursantes/por miembros del Instituto/Tuteladas en el Instituto</td>
-                                    <td>
-                                        <a name="" id="" class="btn btn-primary" href="{{ route('tesis.memorias') }}" role="button">Registrar</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Aportes (de participantes) en Congresos Científicos, Simposios, Conferencias, Jornadas, Eventos de Investigación por los Institutos</td>
-                                    <td>
-                                        <a name="" id="" class="btn btn-primary" href="{{ route('aportes.memorias') }}" role="button">Registrar</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Organizadores de Simposios, Conferencias, Jornadas, Eventos de Investigación por los Institutos</td>
-                                    <td>
-                                        <a name="" id="" class="btn btn-primary" href="{{ route('organizadores.memorias') }}" role="button">Registrar</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Patentes</td>
-                                    <td>
-                                        <a name="" id="" class="btn btn-primary" href="{{ route('patentes.memorias') }}" role="button">Registrar</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <form action="{{route('login.memorias')}}" method="post">
+                            @csrf
+                            <div class="form-group">
+                              <label for="">Correo</label>
+                              <input type="text" name="correo" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                              <small id="helpId" class="text-muted">Ingrese su correo electrónico</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Contraseña</label>
+                                <input type="text" name="password" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                <small id="helpId" class="text-muted">Ingrese su contraseña con la que se registro</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Registrarse
+                              </button>
+                        </form>
+
                     </div>
-                </div>
+                  </div>
               </div>
         </div>
     </div>
+
+    <!--Modal para registro de autores-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registro Autor</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="{{route('autores.memorias')}}" method="post">
+            @csrf
+            <div class="form-group">
+                <label for="">Nombre</label>
+                <input type="text" name="nombre" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Ingrese su nombre completo. Ej. Dr. Miguel Quispe Gonza</small>
+            </div>
+
+            <div class="form-group">
+                <label for="">Correo</label>
+                <input type="email" name="correo" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Ingrese su correo electrónico</small>
+            </div>
+
+            <div class="form-group">
+                <label for="">Telefono</label>
+                <input type="text" name="telefono" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Ingrese su número de celular Ej. 72533597</small>
+            </div>
+
+            <div class="form-group">
+                <label for="">Contraseña</label>
+                <input type="text" name="password" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Ingrese una contraseña segura (minimo 5 caracteres)</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </form>
+        </div>
+
+
+
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

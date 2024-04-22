@@ -30,6 +30,10 @@ Route::get('historial',[EventoController::class,'historial'])->name('historial.e
 Route::post('verifiacionhistorial',[EventoController::class,'verificacionhistorial'])->name('verificacion.historial'); //consulta del historial
 
 //***********************MEMORIAS DE INVESTIGACION************************* */
+Route::post('memorias/autores',[MemoriaController::class,'store'])->name('autores.memorias'); //registramos a los autores
+Route::post('memorias/login',[MemoriaController::class,'login'])->name('login.memorias'); //Login de los autores
+
+
 Route::get('memorias/proyectos',[MemoriaController::class,'proyectos'])->name('proyectos.memorias');
 Route::get('memorias/articulos',[MemoriaController::class,'articulos'])->name('articulos.memorias');
 Route::get('memorias/libros',[MemoriaController::class,'libros'])->name('libros.memorias');
