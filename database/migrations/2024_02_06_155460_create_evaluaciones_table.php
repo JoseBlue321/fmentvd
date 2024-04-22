@@ -15,7 +15,7 @@ return new class extends Migration
             $table->foreign('parcial_id')->references('id')->on('parciales');
             $table->unsignedBigInteger('persona_id');
             $table->foreign('persona_id')->references('id')->on('personas');
-            $table->integer('nota');
+            $table->float('nota');
             $table->string('imagen')->nullable();
             $table->timestamps();
         });

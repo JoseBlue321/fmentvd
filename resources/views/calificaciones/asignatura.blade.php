@@ -23,7 +23,8 @@
                                 <th>Carrera</th>
                                 <th>Curso</th>
                                 <th>Asignatura</th>
-                                <th>parcial</th>
+                                <th>Detalle</th>
+                                <th>Detalle</th>
                                 <th>nota</th>
                               </tr>
                             </thead>
@@ -33,6 +34,7 @@
                                 <td>{{$evaluacion->parciales->asignaturas->cursos->anio}}</td>
                                 <td>{{$evaluacion->parciales->asignaturas->nombre}}</td>
                                 <td>{{$evaluacion->parciales->parcial}}</td>
+                                <td>{{$evaluacion->parciales->asignaturas->detalle}}</td>
                                 <td>{{$evaluacion->nota}}</td>
                               </tr>
                             </tbody>
@@ -41,20 +43,10 @@
                       </div>
                       <div class="row justify-content-center align-items-center g-2">
                       <div class="col-md-6">
-                        <embed src="{{ url("notas/$evaluacion->parcial_id/$evaluacion->imagen") }}" type="application/pdf" width="100%" height="400px" />
-                          <div class="d-grid">
-                            <a class="btn btn-outline-primary" type="button" href="{{ asset("notas/$evaluacion->parcial_id/$evaluacion->imagen") }}" download role="button">
-                              Descargar Hoja Respuesta
-                            </a>
-                        </div>
+                        <img src="{{ asset("notas/$evaluacion->parcial_id/$evaluacion->parcial_id.jpg")}}" alt="patron" width="450px" height="600px" class="d-inline-block align-text-top">
                       </div>
                       <div class="col-md-6">
-                        <embed src="{{ url("notas/$evaluacion->parcial_id/$evaluacion->parcial_id.pdf") }}" type="application/pdf" width="100%" height="400px" />
-                          <div class="d-grid">
-                            <a class="btn btn-outline-success" type="button" href="{{ asset("notas/$evaluacion->parcial_id/$evaluacion->parcial_id.pdf") }}" download role="button">
-                              Descargar Patron de Respuesta
-                            </a>
-                        </div>
+                        <img src="{{ asset("notas/$evaluacion->parcial_id/$evaluacion->imagen")}}" alt="Hoja de respuesta" width="450px" height="600px" class="d-inline-block align-text-top">
                       </div>
                     </div>
                         @endforeach                    
